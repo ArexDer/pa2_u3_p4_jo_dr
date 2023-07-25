@@ -2,6 +2,7 @@ package com.example.demo.banco.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.support.TransactionSynchronizationManager;
 
 import com.example.demo.banco.repository.CuentaBancariaRepository;
 import com.example.demo.banco.repository.modelo.CuentaBancaria;
@@ -12,10 +13,24 @@ public class CuentaBancariaServiceImpl implements CuentaBancariaService {
 	@Autowired
 	private CuentaBancariaRepository bancariaRepository;
 	
+	@Autowired
+	private IPruebaService iPruebaService;
+	
 	@Override
+	//@Transactional
 	public void guardar(CuentaBancaria cuenta) {
 		// TODO Auto-generated method stub
-		this.bancariaRepository.ingresar(cuenta);
+		//this.bancariaRepository.ingresar(cuenta);
+		
+		System.out.println("Service "+TransactionSynchronizationManager.isActualTransactionActive());
+		//this.bancariaRepository.insertar(propietario);
+		//this.prueba();
+		//this.iPruebaService.prueba();
+		//this.iPruebaService.prueba2();
+		//this.iPruebaService.pruebaSuports();
+		//this.iPruebaService.pruebaNotSupported();
+		//this.iPruebaService.pruebaRequired();
+		this.iPruebaService.pruebaRequiresNew();
 	}
 
 	@Override
