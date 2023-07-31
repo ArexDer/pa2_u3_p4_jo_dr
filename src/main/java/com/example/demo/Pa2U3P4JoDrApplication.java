@@ -41,6 +41,8 @@ public class Pa2U3P4JoDrApplication implements CommandLineRunner   {
 	@Override
 	public void run(String... args) throws Exception {
 	
+		
+		/*
 		CuentaBancaria cta_1 = new CuentaBancaria();
 
 		
@@ -56,7 +58,7 @@ public class Pa2U3P4JoDrApplication implements CommandLineRunner   {
 		cta_1.setPropietario(propietario_1);
 		this.bancariaService.guardar(cta_1);
 		
-		
+		*/
 	
 		
 		
