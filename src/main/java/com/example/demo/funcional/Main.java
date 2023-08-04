@@ -83,6 +83,9 @@ public class Main {
 		});
 
 		listaCambiada2.forEach(numero -> LOG.info("U_O:" + numero));
+		
+		
+		
 
 	}
 }

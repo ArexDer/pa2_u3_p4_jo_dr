@@ -1,5 +1,7 @@
 package com.example.demo.funcional;
 
+import java.util.stream.Stream;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,5 +36,8 @@ public class MetHO {
 		
 		return funcion.aplicar(6);
 	}
+	
+	//------------------METODOS PARA INTERFACES PROPIAS DE JAVA
+	
 
 }
